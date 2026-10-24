@@ -2,9 +2,24 @@ plugins {
     id 'net.fabricmc.fabric-loom' version '1.17.21'
 }
 
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
-    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+}
+
+tasks.register('checkFabricConfigurations') {
+    doLast {
+        println "modImplementation exists: " +
+            configurations.findByName('modImplementation') != null
+        println "minecraft exists: " +
+            configurations.findByName('minecraft') != null
+    }
 }
 
 java {
