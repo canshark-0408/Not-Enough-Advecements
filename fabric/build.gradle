@@ -11,6 +11,8 @@ repositories {
 
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
+    
+    implementation project(':common')
 }
 
 tasks.register('checkFabricConfigurations') {
