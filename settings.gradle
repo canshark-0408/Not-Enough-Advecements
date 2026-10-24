@@ -1,0 +1,6 @@
+rootProject.name = 'NotEnoughAdvencements'
+
+include 'common'
+include 'fabric'
+include 'forge'
+include 'neoforge'
