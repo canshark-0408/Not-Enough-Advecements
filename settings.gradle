@@ -1,0 +1,16 @@
+pluginManagement {
+    repositories {
+        maven {
+            url = 'https://maven.fabricmc.net/'
+        }
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'Not-Enough-Advencements'
+
+include 'nea-common'
+include 'nea-fabric'
+include 'nea-forge'
+include 'nea-neoforge'

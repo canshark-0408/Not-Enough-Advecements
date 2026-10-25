@@ -1,0 +1,18 @@
+{
+    "schemaVersion": 1,
+    "id": "nea",
+    "version": "${version}",
+    "name": "Nor Enough Advencements",
+    "description": "Adds mor advancements to Minecraft.",
+    "enviroment": "*",
+    "entrypoints": {
+        "main": [
+            "com.nea.fabric.NeaFabric"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=0.19.5",
+        "minecraft": "26.2",
+        "java": ">=25"
+    }
+}

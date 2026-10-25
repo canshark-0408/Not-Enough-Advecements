@@ -1,0 +1,4 @@
+allprojects {
+    group = project.findProperty('mod_group') ?: 'com.nea'
+    version = project.findProperty('mod_version') ?: '0.1.0'
+}
